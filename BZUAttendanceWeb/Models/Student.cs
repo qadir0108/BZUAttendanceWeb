@@ -1,7 +1,10 @@
-﻿namespace BZUAttendanceWeb.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BZUAttendanceWeb.Models
 {
     public class Student
     {
+        [Key]
         public string RollNumber { get; set; } // LDTTE1919
         public int Session { get; set; } // 1923
         public string Department { get; set; } // IT

@@ -1,7 +1,11 @@
-﻿namespace BZUAttendanceWeb.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BZUAttendanceWeb.Models
 {
     public class TimeTable
     {
+        [Key]
+        public int Id { get; set; }
         public string Room { get; set; } // G3 / F2 / CL
         public string TeacherCNIC { get; set; } // 3630446517241
         public string TeacherName { get; set; } // Kamran Qadir
